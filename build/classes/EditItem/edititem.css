@@ -1,0 +1,47 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.textfile{
+    -fx-border-color:#0077C1;
+    -fx-border-radius: 5px;
+}
+.textfile:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}
+.selecttype{
+    -fx-background-color: transparent;
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 5px;
+}
+.selecttype:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}
+.btnS{
+    -fx-background-color: transparent;
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: black;
+}
+.btnS:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}
+.btnU{
+    -fx-background-color: #146EB4;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+.btnU:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-color: #3484F0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}

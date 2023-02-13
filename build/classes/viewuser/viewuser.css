@@ -1,0 +1,60 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.navbar{
+    -fx-background-color: #3484F0;
+    -fx-border-color: transparent transparent black transparent;
+}
+.btn{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+.btn:hover{
+    -fx-background-color: #1E90FF;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 2px;
+}
+.btnM{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+}
+.btnM:hover{
+    -fx-background-color: #1E90FF;
+    -fx-border-color: transparent transparent white transparent;
+}
+/*.column{
+    -fx-background-color: #E5E4E2;
+    -fx-border-color: black;
+}*/
+.txtsearch{
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 5px;
+}
+.txtsearch:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}
+.btnSearch{
+    -fx-background-color: #146EB4;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.btnSearch:hover{
+    -fx-background-color: #1E90FF;
+}
+.btnAddUser{
+    -fx-background-color: #146EB4;
+    -fx-background-radius: 8px;
+    -fx-cursor: hand;
+}
+.btnAddUser:hover{
+    -fx-background-color: #1E90FF;
+}

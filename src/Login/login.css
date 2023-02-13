@@ -1,0 +1,34 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+/*.login{
+    -fx-border-color: #3484F0;
+    -fx-border-radius: 15px;
+}*/
+.login:hover{
+    -fx-border-width: 2px;
+}
+.btnl{
+    -fx-background-color: #146EB4;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-border-radius: 5px;
+}
+.btnl:hover{
+    -fx-background-color: #1E90FF;
+    -fx-border-color: #F5F5F5;
+    -fx-border-width: 2px;
+    
+}
+.input{
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 5px;
+}
+.input:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}

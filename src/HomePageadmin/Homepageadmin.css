@@ -1,0 +1,80 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Aug 28, 2022, 10:07:31 AM
+    Author     : Dell
+*/
+.main{
+    -fx-background-color: white;
+}
+.btnM{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent transparent white transparent;
+    -fx-border-width:2px;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+}
+.btnM:hover{
+    -fx-background-color:#1E90FF;
+    -fx-border-width: 2px;
+    -fx-border-color: transparent transparent white transparent;
+}
+.btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+}
+.btn:hover{
+    -fx-background-color:#1E90FF;
+    -fx-border-color: transparent transparent white transparent;
+    -fx-border-width: 2px;
+}
+.navbar{
+    -fx-background-color: #3484F0;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-border-width: 1px;
+    
+}
+.btnn{
+    -fx-background-color: transparent;
+/*    -fx-background-image: url("../image/next.png");
+    -fx-background-size: cover;*/
+}
+.select{
+    -fx-background-color: transparent;
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+.select:hover{
+    -fx-border-width: 2px;
+}
+/*.column{
+    -fx-background-color: #E5E4E2;
+    -fx-border-color: black;
+}*/
+.menu{
+    -fx-tab-max--width: 90px;
+}
+.search{
+    -fx-border-color: #1E90FF;
+    -fx-border-radius: 5px;
+}
+.search:hover{
+    -fx-border-width: 2px;
+}
+.btnsearch{
+    -fx-background-color: #3484F0;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+    -fx-text-fill: white;
+}
+.btnsearch:hover{
+    -fx-background-color: #0077C1;
+    -fx-border-color:mediumblue;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+}

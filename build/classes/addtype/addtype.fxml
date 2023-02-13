@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addtype.AddtypeController">
+    <stylesheets>
+        <URL value="@addtype.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="260.0" layoutY="14.0" prefHeight="34.0" prefWidth="80.0" text="Add Type">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabletype" layoutX="42.0" layoutY="48.0" prefHeight="203.0" prefWidth="516.0">
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+                <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+         <columns>
+            <TableColumn fx:id="txtid" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="txttypetable" prefWidth="438.0" text="Type" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txttype" layoutX="116.0" layoutY="292.0" prefHeight="45.0" prefWidth="258.0" />
+      <Label layoutX="116.0" layoutY="267.0" prefHeight="25.0" prefWidth="114.0" text="Type">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="381.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="45.0" prefWidth="95.0" text="Add">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="64.0" text="Back" />
+   </children>
+</AnchorPane>

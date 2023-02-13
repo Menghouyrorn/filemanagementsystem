@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="925.0" styleClass="mainFxmlClass" stylesheets="@addnew.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="addnew.addnew">
+   <children>
+      <Pane prefHeight="55.0" prefWidth="925.0" styleClass="navbar" stylesheets="@addnew.css">
+         <children>
+            <HBox layoutX="479.0" layoutY="6.0" prefHeight="43.0" prefWidth="432.0" spacing="30.0">
+               <children>
+                  <Button fx:id="txthome" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleHome" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@addnew.css" text="Home">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="txtviewuser" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleViewUser" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@addnew.css" text="View User">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" styleClass="btnM" stylesheets="@addnew.css" text="Add New">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="signout" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handleSignot" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@addnew.css" text="SignOut">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <ImageView fitHeight="77.0" fitWidth="68.0" layoutX="8.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/National_University_of_Cambodia_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="76.0" layoutY="14.0" prefHeight="31.0" prefWidth="224.0" text="National University of Management" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="47.0" layoutY="76.0" prefHeight="77.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="247.0" text="No">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtListNumber" prefHeight="43.0" prefWidth="350.0" promptText="Input the No" styleClass="txtfile" stylesheets="@addnew.css" />
+         </children>
+      </VBox>
+      <VBox layoutX="519.0" layoutY="76.0" prefHeight="77.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="247.0" text="Title of Document">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txttitle" prefHeight="43.0" prefWidth="350.0" promptText="Input the title of document" styleClass="txtfile" stylesheets="@addnew.css" />
+         </children>
+      </VBox>
+      <VBox layoutX="47.0" layoutY="182.0" prefHeight="77.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="247.0" text="Description of document">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtDescription" prefHeight="43.0" prefWidth="350.0" promptText="Input the Description of document" styleClass="txtfile" stylesheets="@addnew.css" />
+         </children>
+      </VBox>
+      <VBox layoutX="519.0" layoutY="182.0" prefHeight="77.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="247.0" text="Type of document">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="txtcombo" prefHeight="43.0" prefWidth="350.0" promptText="Select type " styleClass="txtfile" stylesheets="@addnew.css" />
+         </children>
+      </VBox>
+      <VBox layoutX="47.0" layoutY="405.0" prefHeight="77.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="247.0" text="Select file">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="txtfile" alignment="CENTER" mnemonicParsing="false" onAction="#handleSelect" prefHeight="43.0" prefWidth="350.0" styleClass="select" stylesheets="@addnew.css" text="Select the file" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="519.0" layoutY="293.0" prefHeight="77.0" prefWidth="350.0">
+         <children>
+            <Label prefHeight="31.0" prefWidth="247.0" text="Date ">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtdate" prefHeight="43.0" prefWidth="350.0" styleClass="txtfile" stylesheets="@addnew.css" />
+         </children>
+      </VBox>
+      <Button layoutX="519.0" layoutY="431.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="43.0" prefWidth="350.0" styleClass="btns" stylesheets="@addnew.css" text="Save">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="txtimage" fitHeight="84.0" fitWidth="98.0" layoutX="188.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/PDF.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtfilename" alignment="CENTER" layoutX="47.0" layoutY="364.0" prefHeight="31.0" prefWidth="350.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button layoutX="878.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleAddtype" prefHeight="25.0" prefWidth="33.0" text="+">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

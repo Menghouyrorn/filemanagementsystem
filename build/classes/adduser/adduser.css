@@ -1,0 +1,32 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+/*.body{
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 15px;
+}
+.body:hover{
+    -fx-border-width:2px;
+}*/
+.textfile{
+    -fx-border-color:#0077C1;
+    -fx-border-radius: 5px;
+}
+.textfile:hover{
+    -fx-border-width: 2px;
+}
+.btn{
+    -fx-background-color: #146EB4;
+    -fx-border-color: #0077C1;
+    -fx-border-width: 2px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+}
+.btn:hover{
+    -fx-background-color: #3484F0;
+}

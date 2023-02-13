@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="925.0" styleClass="main" stylesheets="@Homepageadmin.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HomePageadmin.HomepageadminController">
+    <children>
+        <Pane prefHeight="55.0" prefWidth="925.0" styleClass="navbar" stylesheets="@Homepageadmin.css">
+            <children>
+                <HBox layoutX="480.0" layoutY="10.0" prefHeight="36.0" prefWidth="431.0" spacing="30.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handleHome" prefHeight="40.0" prefWidth="85.0" styleClass="btnM" stylesheets="@Homepageadmin.css" text="Home">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="viewuser" mnemonicParsing="false" onAction="#handleViewUser" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@Homepageadmin.css" text="View user">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="txtaddnew" mnemonicParsing="false" onAction="#handleAddNew" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@Homepageadmin.css" text="AddNew">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#handleSignOut" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@Homepageadmin.css" text="SignOut">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </HBox>
+            <ImageView fitHeight="55.0" fitWidth="67.0" layoutX="7.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/National_University_of_Cambodia_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="74.0" layoutY="20.0" prefHeight="22.0" prefWidth="227.0" text="National University of Management" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+        <TableView fx:id="tableview" layoutX="5.0" layoutY="136.0" prefHeight="387.0" prefWidth="915.0" styleClass="table" stylesheets="@Homepageadmin.css">
+            <columns>
+                <TableColumn fx:id="txtlistnumber" prefWidth="72.0" styleClass="column" text="No" />
+                <TableColumn fx:id="txttitle" prefWidth="171.0" styleClass="column" text="Tittle Documet" />
+                <TableColumn fx:id="txtdescription" prefWidth="257.0" styleClass="column" text="Description" />
+                <TableColumn fx:id="txtdate" minWidth="0.0" prefWidth="85.0" styleClass="column" text="Date" />
+                <TableColumn fx:id="txtfilename" prefWidth="151.0" styleClass="column" text="file Name" />
+            <TableColumn fx:id="txttypefile" prefWidth="177.0" text="type" />
+            </columns>
+            <contextMenu>
+                <ContextMenu>
+                    <items>
+                        <MenuItem fx:id="open" mnemonicParsing="false" onAction="#handleOpen" styleClass="menu" text="Open" />
+                        <MenuItem fx:id="download" mnemonicParsing="false" onAction="#handleDownload" styleClass="menu" text="Download" />
+                        <MenuItem fx:id="update" mnemonicParsing="false" onAction="#handleEdit" styleClass="menu" text="Update" />
+                        <MenuItem fx:id="delete" mnemonicParsing="false" onAction="#handleDelete" styleClass="menu" text="Delete" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </TableView>
+      <HBox layoutX="631.0" layoutY="87.0" prefHeight="36.0" prefWidth="285.0" spacing="20.0">
+         <children>
+            <TextField fx:id="txtsearchbox" prefHeight="36.0" prefWidth="193.0" promptText="Search..." styleClass="search" stylesheets="@Homepageadmin.css" />
+            <Button mnemonicParsing="false" onAction="#handleSearchButton" prefHeight="36.0" prefWidth="67.0" styleClass="btnsearch" stylesheets="@Homepageadmin.css" text="Search" />
+         </children>
+      </HBox>
+      <VBox layoutX="14.0" layoutY="55.0" prefHeight="68.0" prefWidth="199.0">
+         <children>
+              <Label prefHeight="29.0" prefWidth="182.0" text="Select the type of document">
+                  <font>
+                      <Font name="Times New Roman" size="16.0" />
+                  </font>
+              </Label>
+              <ComboBox fx:id="txtcombox" onAction="#handleSelect" prefHeight="36.0" prefWidth="199.0" promptText="select the type" styleClass="select" stylesheets="@Homepageadmin.css" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="925.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewuser.ViewuserController">
+    <stylesheets>
+        <URL value="@viewuser.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="55.0" prefWidth="925.0" styleClass="navbar" stylesheets="@viewuser.css">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="70.0" layoutX="14.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/National_University_of_Cambodia_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="78.0" layoutY="16.0" prefHeight="23.0" prefWidth="208.0" text="National University of Management" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="479.0" layoutY="4.0" prefHeight="47.0" prefWidth="432.0" spacing="30.0">
+               <children>
+                  <Button fx:id="btnhome" mnemonicParsing="false" onAction="#handleHome" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@viewuser.css" text="Home">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="85.0" styleClass="btnM" stylesheets="@viewuser.css" text="View User">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleAddnew" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@viewuser.css" text="Add New">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleSigout" prefHeight="40.0" prefWidth="85.0" styleClass="btn" stylesheets="@viewuser.css" text="SignOut">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <TableView fx:id="tableview" layoutX="113.0" layoutY="148.0" prefHeight="364.0" prefWidth="697.0" styleClass="table" stylesheets="@viewuser.css">
+        <columns>
+          <TableColumn fx:id="txtid" prefWidth="63.0" styleClass="column" text="ID" />
+          <TableColumn fx:id="txtfname" prefWidth="181.0" styleClass="column" text="Firstname" />
+            <TableColumn fx:id="txtlastname" prefWidth="189.0" styleClass="column" text="Lastname" />
+            <TableColumn fx:id="txtemail" prefWidth="262.0" styleClass="column" text="email" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+                <MenuItem mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <TextField fx:id="txtsearch" layoutX="113.0" layoutY="78.0" prefHeight="40.0" prefWidth="219.0" styleClass="txtsearch" stylesheets="@viewuser.css" />
+      <Button layoutX="341.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="40.0" prefWidth="70.0" styleClass="btnSearch" stylesheets="@viewuser.css" text="Search" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button layoutX="725.0" layoutY="78.0" mnemonicParsing="false" onAction="#handleAddUser" prefHeight="40.0" prefWidth="85.0" styleClass="btnAddUser" stylesheets="@viewuser.css" text="AddUser" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

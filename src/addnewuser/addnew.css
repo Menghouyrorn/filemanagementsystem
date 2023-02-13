@@ -1,0 +1,66 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.navbar{
+    -fx-background-color: #3484F0;
+    -fx-border-color: transparent transparent black transparent;
+}
+
+.btnM{
+    -fx-background-color:transparent;
+    -fx-border-color:transparent transparent white transparent;
+    -fx-border-width:2px;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+}
+.btnM:hover{
+    -fx-background-color:#1E90FF;
+    -fx-border-color: transparent transparent white transparent;
+}
+.btn{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+    -fx-text-fill: white;
+}
+.btn:hover{
+    -fx-background-color:#1E90FF;
+    -fx-border-color: transparent transparent white transparent;
+}
+.txtfile{
+    -fx-background-color: transparent;
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 5px;
+}
+.txtfile:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}
+.label{
+    
+}
+
+.select{
+    -fx-background-color: transparent;
+    -fx-border-color: #0077C1;
+    -fx-border-radius: 5px;
+}
+.select:hover{
+    -fx-border-color: #1E90FF;
+    -fx-border-width: 2px;
+}
+.btns{
+    -fx-background-color: #146EB4;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+    -fx-background-radius: 8px;
+}
+.btns:hover{
+    -fx-background-color: #1E90FF;
+    -fx-border-color: #3484F0;
+    -fx-border-width: 2px;
+    -fx-border-radius: 8px;
+}

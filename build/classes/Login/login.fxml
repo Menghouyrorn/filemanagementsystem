@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="925.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+    <stylesheets>
+        <URL value="@login.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="502.0" layoutY="-1.0" prefHeight="547.0" prefWidth="424.0" styleClass="login" stylesheets="@login.css">
+         <children>
+            <Label alignment="CENTER" layoutX="199.0" layoutY="80.0" prefHeight="24.0" prefWidth="56.0" text="Login" textFill="#146eb4">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtemail" layoutX="67.0" layoutY="140.0" prefHeight="40.0" prefWidth="307.0" promptText="Input the Email" styleClass="input" stylesheets="@login.css" />
+            <Button layoutX="67.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="40.0" prefWidth="307.0" styleClass="btnl" stylesheets="@login.css" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="67.0" layoutY="342.0" onAction="#handleRegister" prefHeight="23.0" prefWidth="116.0" text="Don’t has Account ?" />
+            <Hyperlink layoutX="278.0" layoutY="342.0" onAction="#handleForgetpassword" prefHeight="23.0" prefWidth="102.0" text="ForgetPassword ?" />
+            <PasswordField fx:id="txtpassword" layoutX="67.0" layoutY="213.0" prefHeight="40.0" prefWidth="307.0" promptText="Input the password" styleClass="input" stylesheets="@login.css" />
+         </children>
+      </Pane>
+      <Pane layoutX="-1.0" prefHeight="547.0" prefWidth="503.0" style="-fx-background-color: #31E1F7;">
+         <children>
+            <ImageView fitHeight="49.0" fitWidth="71.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/National_University_of_Cambodia_logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="85.0" layoutY="22.0" prefHeight="32.0" prefWidth="252.0" text="National University of Management">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="250.0" prefHeight="47.0" prefWidth="315.0" text="Document Management System">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="547.0" prefWidth="925.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adduser.AdduserController">
+    <stylesheets>
+        <URL value="@adduser.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="442.0" prefHeight="547.0" prefWidth="483.0" styleClass="body" stylesheets="@adduser.css">
+         <children>
+            <VBox layoutX="40.0" layoutY="64.0" prefHeight="74.0" prefWidth="184.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="146.0" text="FirstName">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtfname" prefHeight="43.0" prefWidth="185.0" promptText="Input the Firstname" styleClass="textfile" stylesheets="@adduser.css" />
+               </children>
+            </VBox>
+            <VBox layoutX="263.0" layoutY="64.0" prefHeight="74.0" prefWidth="184.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="146.0" text="LastName">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtlname" prefHeight="43.0" prefWidth="185.0" promptText="Input the lastname" styleClass="textfile" stylesheets="@adduser.css" />
+               </children>
+            </VBox>
+            <VBox layoutX="40.0" layoutY="146.0" prefHeight="74.0" prefWidth="403.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="146.0" text="Email">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtemail" prefHeight="43.0" prefWidth="403.0" promptText="Input the email" styleClass="textfile" stylesheets="@adduser.css" />
+               </children>
+            </VBox>
+            <VBox layoutX="40.0" layoutY="226.0" prefHeight="74.0" prefWidth="403.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="146.0" text="Password">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtpassword" prefHeight="43.0" prefWidth="403.0" promptText="Input the password" styleClass="textfile" stylesheets="@adduser.css" />
+               </children>
+            </VBox>
+            <VBox layoutX="40.0" layoutY="309.0" prefHeight="74.0" prefWidth="403.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="146.0" text="Current Password">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="txtcpassword" prefHeight="43.0" prefWidth="403.0" promptText="Input the current password" styleClass="textfile" stylesheets="@adduser.css" />
+               </children>
+            </VBox>
+            <Button layoutX="141.0" layoutY="413.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="43.0" prefWidth="218.0" styleClass="btn" stylesheets="@adduser.css" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="206.0" layoutY="14.0" prefHeight="36.0" prefWidth="71.0" text="Add User" textFill="#146eb4">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="13.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleback" prefHeight="25.0" prefWidth="80.0" text="Back" />
+         </children>
+      </Pane>
+      <Pane prefHeight="547.0" prefWidth="438.0" style="-fx-background-color: #31E1F7;">
+         <children>
+            <Label layoutX="93.0" layoutY="252.0" prefHeight="43.0" prefWidth="253.0" text="File Management System">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="19.0" prefHeight="43.0" prefWidth="243.0" text="National University of Management">
+               <font>
+                  <Font name="Times New Roman" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="53.0" fitWidth="80.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/National_University_of_Cambodia_logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
